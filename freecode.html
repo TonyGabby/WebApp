@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="freecode.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Student Experience Survey</h1>
+    <p id="description">We'd love to know how your experience has been so far. Please fill this quick survey.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <!-- Number --> 
+      <label id="number-label" for="number">Age (optional)</label>
+      <input type="number" id="number" name="age" min="10" max="99" placeholder="Enter your age" />
+
+      <!-- Dropdown -->
+      <label for="dropdown">What best describes your current role?</label>
+      <select id="dropdown" name="role">
+        <option value="">--Select an option--</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>Would you recommend this course to a friend?</p>
+      <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+      <label><input type="radio" name="recommend" value="no" /> No</label>
+
+      <!-- Checkboxes -->
+      <p>What topics are you interested in? (Select all that apply)</p>
+      <label><input type="checkbox" name="interests" value="frontend" /> Frontend Development</label>
+      <label><input type="checkbox" name="interests" value="backend" /> Backend Development</label>
+      <label><input type="checkbox" name="interests" value="cybersecurity" /> Cybersecurity</label>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" name="comments" placeholder="Any feedback or suggestions..."></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
